@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.swiper-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide-title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .slide-price {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+  }
+  .product-name {
+    max-width: 200px !important;
+    overflow: hidden;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ }
+   
+  
+  .swiper-button-prev, .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #202022;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+  }
+  .swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 14px !important;
+  }  
+  .swiper-button-prev:hover, .swiper-button-next:hover {
+    background-color: #202022 !important;
+    color: #00FF00 ;
+  }
+  
+  
+  .swiper-button-prev {
+    left: 10px;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #ccc;
+  }
+  
+  .swiper-button-prev, .fa-chevron-left,
+  .swiper-button-next, .fa-chevron-right {
+    font-size: 10px;
+    z-index: 1;
+  }
+  
+  .swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .swiper-pagination-bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .swiper-pagination-bullet-active {
+    
+    opacity: 1;
+  }
+  
+
+  
+  .swiper-container:hover .swiper-button-prev,
+  .swiper-container:hover .swiper-button-next {
+    transform: translateY(-50%) scale(1.1);
+  }
+  .handle{
+    font-family: "Lobster", cursive;
+  }
+ ::-webkit-scrollbar{
+  width: 0px;
+ }
+ @media screen and (max-width: 800px) {
+  .swiper-button-prev, .swiper-button-next {
+    display: none;
+  }
+}
+ 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu.open {
+  transform: translateX(0%);
+}
+
+.menu.close {
+  transform: translateX(100%);
+}
+
+
+.overlay.open {
+  transform: translateX(0);
+}
+
+.overlay.close {
+  transform: translateX(-100%);
+}
+.menu-item-thumbnail {
+  width: 600px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.menu-item-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-img{width: 300px; height: auto;}
