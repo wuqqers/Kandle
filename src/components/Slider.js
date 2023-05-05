@@ -156,7 +156,7 @@ const Slider = () => {
         // when window width is >= 768px
         768: {
           slidesPerView: 3,
-          spaceBetween: 40
+          spaceBetween: 20
         }
       }
     });
@@ -168,7 +168,7 @@ const Slider = () => {
 
   return (
     
-    <div className="swiper-container bg-white border-b-2 border-[#202022]">
+    <div className="swiper-container bg-[#f0ead6] border-b-2 border-[#202022]">
         <h1  className='text-3xl  p-10 handle text-[#202022] text-center '>Food & Snacks</h1>
       <div className="swiper-wrapper flex justify-between  ">{slides}
       

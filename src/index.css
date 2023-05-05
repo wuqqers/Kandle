@@ -116,6 +116,11 @@
   .swiper-button-prev, .swiper-button-next {
     display: none;
   }
+  .menu-item-thumbnail {
+    width: 100px !important;
+    height: 100px !important;
+    margin-right: 5px;
+  }
 }
  
 .overlay {
@@ -168,3 +173,17 @@
 }
 
 .slide-img{width: 300px; height: auto;}
+.bg-img-left{
+  transform: rotate(-90deg);
+  transform-origin: center;
+  left: -50%; 
+  position: absolute;
+
+}
+.bg-img-right{
+  transform: rotate(90deg);
+  transform-origin: center;
+  right: -50%; 
+  position: absolute;
+}
+.line{width: 80%; margin-left: 10%; margin-right: 10%;} 
